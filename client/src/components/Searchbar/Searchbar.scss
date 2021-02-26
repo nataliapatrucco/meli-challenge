@@ -1,0 +1,30 @@
+@import "../../assets/styles/variables.scss";
+
+.searchbar-container {
+  background-color: $yellow;
+  padding: 10px 0;
+}
+
+.searchbar {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+.searchbar-input {
+  margin-left: 20px;
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.searchbar-btn {
+  flex: 1;
+  max-width: 35px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: none;
+  background: no-repeat url("../../assets/search-s.png") #cccccc 50% 50%;
+}

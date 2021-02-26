@@ -1,0 +1,81 @@
+@import "../../assets/styles/variables.scss";
+
+.items-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $light-gray;
+}
+
+.items-search-view {
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  width: 1024px;
+  border-radius: 5px;
+  border-bottom: solid 1px $light-gray;
+
+  @media (max-width: 480px) {
+    max-width: 480px;
+  }
+}
+
+.items-info {
+  display: flex;
+}
+
+.items-price {
+  color: $black;
+  display: flex;
+  margin-bottom: $large-margin;
+  font-size: 24px;
+}
+
+.items-currency {
+  margin: 0;
+  padding-right: 5px;
+}
+
+.items-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 4px;
+  margin: $short-margin;
+  @media (max-width: 480px) {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+}
+
+.items-details {
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin-top: 40px;
+}
+
+.items-title {
+  color: $black;
+  font-size: 18px;
+  margin-top: 0;
+}
+a {
+  border: none;
+  text-decoration: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+.items-address {
+  color: $dark-gray;
+  font-size: 12px;
+  margin: 40px 100px;
+}
+
+.free-shipping {
+  margin-left: 10px;
+  width: 25px;
+}

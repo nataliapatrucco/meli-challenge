@@ -1,0 +1,29 @@
+@import "../../assets/styles/variables.scss";
+
+.breadcrums-container {
+  background-color: $light-gray;
+  display: flex;
+  justify-content: center;
+}
+
+.breadcrums {
+  width: 1024px;
+  padding: $short-margin;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  text-align: start;
+}
+
+li {
+  display: inline;
+
+  &:not(:last-child):after {
+    margin: 8px;
+    content: ">";
+  }
+
+  &:last-child {
+    font-weight: bold;
+  }
+}
